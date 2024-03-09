@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    
+<nav class="md:flex md:justify-between px-8 bg-slate-900 text-white  py-4 relative">
+<div class=" flex justify-between">
+    <span class="text-2xl">Logo</span>
+    <span class=" md:hidden block m-4" id="menu"> @@   
+      </span>
+</div>
+<ul class="md:flex opacity-0 md:opacity-100 ease-in md:static absolute right-[0px] z-[-1] md:z-auto bg-slate-900 h-screen md:h-auto text-center">
+    <li class="m-4">Home</li>
+    <li class="m-4">Product</li>
+    <li class="m-4">About us</li>
+    <li class="m-2"> <button class="px-3 py-2  rounded-md hover:bg-slate-100 hover:text-black">Contect us</button> </li>
+</ul>
+
+
+</nav>
+
+
+<!-- <div class=" p-4 flex justify-evenly">
+    <div class="">fwafwa</div>
+<div class="w-50 rounded-md bg-slate-800 shadow-md p-3">
+    <label for="">lala</label>
+    <input type="text" name="" id="" class="w-full my-3">
+    <label for="">lala</label>
+
+    <input type="text" name="" id="" class="w-full my-3">
+    <label for="">lala</label>
+
+    <input type="text" name="" id="" class="w-full my-3">
+</div>
+    
+</div> -->
+
+
+
+
+
+
+<div class="min-h-screen bg-gray-200 p-10">
+    <!-- Offcanvas -->
+    <div class="">
+      <input class="peer hidden" type="checkbox" name="offcanvas" id="offcanvas"  />
+      <!-- This is a transient button. Helps make the user think the real button hasn't gone anywhere -->
+      <button class="hidden rounded-full bg-blue-600 px-12 py-6 font-semibold text-white peer-checked:inline-block">OPEN</button>
+      <!-- This is the real button. It expands to fill screen to allow user to close the offcanvas by clicking outside.
+         Both buttons must share the same styles except for the "peer-checked" classes -->
+      <label class="inline-block cursor-pointer rounded-full bg-blue-600 px-12 py-6 font-semibold text-white hover:opacity-90 peer-checked:fixed peer-checked:inset-0 peer-checked:z-20 peer-checked:h-screen peer-checked:w-screen peer-checked:rounded-none peer-checked:opacity-0" for="offcanvas">OPEN</label>
+      <div class="pointer-events-none fixed top-0 left-0 z-10 h-screen w-screen bg-gray-700/30 opacity-0 peer-checked:opacity-100"></div>
+      <div class="fixed -right-96 top-0 z-30 flex h-screen w-96 max-w-full bg-white shadow-lg transition-all peer-checked:right-0">
+        <!-- Offcanvas content -->
+ffff
+        <!-- /Offcanvas content -->
+      </div>
+      <div></div>
+    </div>
+    <!-- /Offcanvas -->
+  </div>
+
+
+
+
+
+<script>
+const list = document.querySelector('ul')
+const menu = document.getElementById('menu')
+
+menu.addEventListener('click',function(){
+ list.classList.toggle('opacity-100')
+//  ,list.classList.toggle('right-[0px]')
+})
+    
+
+
+</script>
+
+
+
+
+
+
+</body>
+</html>
